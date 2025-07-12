@@ -37,6 +37,7 @@ pyinstaller==6.14.2
 pyinstaller-hooks-contrib==2025.5
 pypiwin32==223
 PySocks==1.7.1
+python-dotenv==1.1.1
 pywin32==310
 pywin32-ctypes==0.2.3
 pywinauto==0.6.3
@@ -57,6 +58,7 @@ trio==0.30.0
 trio-websocket==0.12.2
 typing_extensions==4.13.2
 urllib3==2.4.0
+webdriver-manager==4.0.2
 websocket-client==1.8.0
 wrapt==1.17.2
 wsproto==1.2.0
