@@ -1,0 +1,43 @@
+{
+    "ptskit": [
+        {
+            "domain": ".www.ptskit.org",
+            "httpOnly": false,
+            "name": "Hm_lpvt_h7u9d7gb1rw",
+            "path": "/",
+            "sameSite": "Lax",
+            "secure": false,
+            "value": "1752334094"
+        },
+        {
+            "domain": ".www.ptskit.org",
+            "expiry": 1783870094,
+            "httpOnly": false,
+            "name": "Hm_tf_h7u9d7gb1rw",
+            "path": "/",
+            "sameSite": "Lax",
+            "secure": false,
+            "value": "1752333500"
+        },
+        {
+            "domain": ".www.ptskit.org",
+            "expiry": 1783870094,
+            "httpOnly": false,
+            "name": "Hm_lvt_h7u9d7gb1rw",
+            "path": "/",
+            "sameSite": "Lax",
+            "secure": false,
+            "value": "1752333500"
+        },
+        {
+            "domain": ".www.ptskit.org",
+            "expiry": 1783869574,
+            "httpOnly": true,
+            "name": "c_secure_pass",
+            "path": "/",
+            "sameSite": "Lax",
+            "secure": true,
+            "value": "eyJ1c2VyX2lkIjoiNTQ2OSIsImV4cGlyZXMiOjE3ODM4Njk1NzV9LmQ0YzRiZTkxMmY2Mzg0YmE3YzRmZjVkYzA4M2RjZGU3MzcxOTAwZTMzOGY0YzMyYTgzNmZmZGNkNjQ5MDc0MGU%3D"
+        }
+    ]
+}

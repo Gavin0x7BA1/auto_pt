@@ -25,9 +25,15 @@ jobs:
 
       - name: Build EXE with PyInstaller
         run: |
-          pyinstaller --onefile --icon=assets/run.ico --console ${{ github.event.repository.name }}.py
+          pyinstaller --onefile ^
+                      --icon=assets/run.ico ^
+                      --add-data pt_sites.json ^
+                      --console ${{ github.event.repository.name }}.py
           ren dist\${{ github.event.repository.name }}.exe debug.exe
-          pyinstaller --onefile --icon=assets/run.ico --noconsole  ${{ github.event.repository.name }}.py
+          pyinstaller --onefile ^
+                      --icon=assets/run.ico ^
+                      --add-data pt_sites.json ^
+                      --noconsole  ${{ github.event.repository.name }}.py
 
       - name: Upload Release Asset
         uses: softprops/action-gh-release@v1

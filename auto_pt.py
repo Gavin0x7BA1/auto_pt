@@ -11,8 +11,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
 # ---------------- 文件路径常量 ----------------
-SITES_FILE  = 'data/pt_sites.json'
-COOKIES_FILE = 'data/pt_cookies.json'
+SITES_FILE  = 'pt_sites.json'
+COOKIES_FILE = 'pt_cookies.json'
 
 # ---------------- 业务函数 ----------------
 def load_sites():
