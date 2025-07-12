@@ -11,9 +11,14 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 
 # ---------------- 文件路径常量 ----------------
-SITES_FILE  = 'pt_sites.json'
-COOKIES_FILE = 'pt_cookies.json'
+def resource_path(rel_path):
+    """返回打包或源码环境下的绝对路径"""
+    base = getattr(sys, '_MEIPASS', os.path.abspath(os.path.dirname(__file__)))
+    return os.path.join(base, rel_path)
 
+#SITES_FILE  = 'pt_sites.json'
+SITES_FILE = resource_path('pt_sites.json')
+COOKIES_FILE = 'pt_cookies.json'
 # ---------------- 业务函数 ----------------
 def load_sites():
     """读取站点配置"""
