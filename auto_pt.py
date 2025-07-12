@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import ttk, messagebox
-import json
-import os
+import os, sys, json
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
