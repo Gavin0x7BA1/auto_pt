@@ -29,19 +29,9 @@ jobs:
           if (-not (Test-Path pt_sites.json)) {
             Write-Error "pt_sites.json 缺失"; exit 1
           }
-          pyinstaller --onefile `
-                      --icon=assets/run.ico `
-                      --add-data="pt_sites.json:." `
-                      --add-binary "driver/chromedriver.exe;driver"
-                      --console `
-                      ${{ github.event.repository.name }}.py
+          pyinstaller --onefile --icon=assets/run.ico --add-data="pt_sites.json:." --add-binary "driver/chromedriver.exe;driver" --console ${{ github.event.repository.name }}.py
           ren dist\${{ github.event.repository.name }}.exe debug.exe
-          pyinstaller --onefile `
-                      --icon=assets/run.ico `
-                      --add-data="pt_sites.json:." `
-                      --add-binary "driver/chromedriver.exe;driver"
-                      --noconsole `
-                      ${{ github.event.repository.name }}.py
+          pyinstaller --onefile --icon=assets/run.ico --add-data="pt_sites.json:." --add-binary "driver/chromedriver.exe;driver" --noconsole ${{ github.event.repository.name }}.py
 
       - name: Upload Release Asset
         uses: softprops/action-gh-release@v1
