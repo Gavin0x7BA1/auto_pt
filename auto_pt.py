@@ -64,8 +64,10 @@ def open_site():
     # 启动浏览器
     chrome_opts = Options()
     chrome_opts.add_argument("--disable-blink-features=AutomationControlled")
-    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),
+    driver_path = resource_path('driver/chromedriver.exe')
+    driver = webdriver.Chrome(service=Service(driver_path),
                               options=chrome_opts)
+    print(f"ChromeDrive path={driver.service.path}")   
     driver.get(url)
     WebDriverWait(driver, 60).until(EC.presence_of_element_located((By.TAG_NAME, 'body')))
 
